@@ -70,7 +70,8 @@ def ImageFilter(post, data_config):
 
 def PriceFilter(post, data_config):
     price = '0'
-
+    
+    
 def KeywordFilter(post, data_config):
     keyword_matches = []
     for keyword in data_config['keywords']:
