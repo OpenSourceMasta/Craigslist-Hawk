@@ -69,21 +69,22 @@ def ImageFilter(post, data_config):
     return True
 
 def PriceFilter(post, data_config):
-    split_title = post['title'].rsplit(';', 1)
-    if len(split_title) > 1:
-        price = int(split_title[len(split_title) - 1])
-
-        if int(data_config['minimum_price']) > price:
-            Log.log('Filtered ' + post['title'] + ' // Price too low, $' + str(price))
-            return False
-        elif int(data_config['maximum_price']) < price:
-            Log.log('Filtered ' + post['title'] + ' // Price too high, $' + str(price))
-            return False
-        else:
-            post['price'] = price
-            return True
-    Log.log('Filtered ' + post['title'] + ' // no price in post')
-    return False
+    price = '0'
+#    split_title = post['title'].rsplit(';', 1)
+#    if len(split_title) > 1:
+#        price = int(split_title[len(split_title) - 1])
+#
+#        if int(data_config['minimum_price']) > price:
+#            Log.log('Filtered ' + post['title'] + ' // Price too low, $' + str(price))
+#            return False
+#        elif int(data_config['maximum_price']) < price:
+#            Log.log('Filtered ' + post['title'] + ' // Price too high, $' + str(price))
+#            return False
+#        else:
+#            post['price'] = price
+#            return True
+#    Log.log('Filtered ' + post['title'] + ' // no price in post')
+#    return False
 
 def KeywordFilter(post, data_config):
     keyword_matches = []
