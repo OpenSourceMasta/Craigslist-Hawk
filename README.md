@@ -7,9 +7,7 @@ Python bot to search Craigslist for posts that match the criteria specified and 
 - keywords: enter keywords to look for when searching posts
 - locations: areas of the country to include in your search
 - logging_enabled: true/false, outputs a log file after each search if true
-- maximum_price: excludes posts with asking price greater than dollar amount entered
 - minimum_keyword_match: minimum number of keywords that must be matched before being included in an email notification
-- minimum_price: excludes posts with asking price less than dollar amount entered
 - notification_intervals: enter time of day (in 24 hr format) that notifications should be sent out
 - require_image: true/false, excludes posts that do not include an image if true
 
